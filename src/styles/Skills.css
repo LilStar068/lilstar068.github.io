@@ -1,0 +1,127 @@
+.skills .container {
+    row-gap: 0;
+}
+
+.skills .header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: var(--mb-2-5);
+}
+
+.skills .icon,
+.skills .arrow {
+    font-size: 2rem;
+    color: var(--first-color);
+}
+
+.skills .icon {
+    margin-right: var(--mb-1);
+}
+
+.skills .header .title {
+    font-size: var(--h3-font-size);
+}
+
+.skills .header .subtitle {
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+
+.skills .arrow {
+    margin-left: auto;
+    transition: .4s;
+}
+
+.skills .titles {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--mb-0-5);
+}
+
+.skills .titles .name {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+.skills .bar,
+.skills .percentage {
+    height: 6px;
+    border-radius: .25rem;
+}
+
+.skills .bar {
+    background-color: var(--first-color-lighter);
+}
+
+.skills .percentage {
+    display: block;
+    background-color: var(--first-color);
+}
+
+.skills_html, .skills_py {
+    width: 90%;
+}
+
+.skills_css {
+    width: 70%;
+}
+
+.skills_rjs {
+    width: 60%;
+}
+
+.skills_njs {
+    width: 45%;
+}
+
+.skills_js {
+    width: 70%;
+}
+
+.skills_ts {
+    width: 55%;
+}
+
+.skills_django, .skills_fb {
+    width: 20%;
+}
+
+.skills_php {
+    width: 15%;
+}
+
+.skills_figma {
+    width: 80%;
+}
+
+.skills_ps {
+    width: 40%;
+}
+
+.skills_blender {
+    width: 10%;
+}
+
+.skills .list {
+    row-gap: 1.5rem;
+    padding-left: 2.7rem;
+}
+
+.skills_nodejs {
+    width: 50%;
+}
+
+.skills .content.close .list {
+    height: 0;
+    overflow: hidden;
+}
+
+.skills .content.open .list {
+    height: max-content;
+    margin-bottom: var(--mb-2-5);
+}
+
+.skills .content.open .arrow {
+    transform: rotate(-180deg);
+}

@@ -1,0 +1,40 @@
+.about .img {
+    width: 200px;
+    border-radius: .5rem;
+    justify-self: center;
+    align-self: center;
+}
+
+.about .description {
+    text-align: center;
+    margin-bottom: var(--mb-2-5);
+}
+
+.about .info {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: var(--mb-2-5);
+    flex-wrap: wrap;
+}
+
+.about .info>div {
+    box-sizing: content-box;
+    padding: 1rem;
+}
+
+.about .info .title,
+.about .info .text {
+    display: block;
+    text-align: center;
+}
+
+.about .info .title {
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--first-color);
+}
+
+.about .buttons {
+    display: flex;
+    justify-content: center;
+}

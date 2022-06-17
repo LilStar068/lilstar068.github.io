@@ -1,0 +1,123 @@
+.nav {
+    width: 968px;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .logo,
+.nav .toggle {
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    transition: all .3s ease-in-out;
+}
+
+.nav .buttons .toggle {
+    cursor: pointer;
+    position: absolute;
+    right: 1.3rem;
+    bottom: .5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: var(--font-medium);
+    z-index: 1;
+}
+
+.nav .logo:hover,
+.nav .toggle:hover,
+.nav .menu .list .item .link:hover {
+    color: var(--first-color);
+}
+
+.nav .menu .list {
+    grid-template-columns: repeat(3, 1fr);
+    grid: 2rem;
+    text-align: center;
+}
+
+.nav .menu .list .item .link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+    transition: all .3s ease-in-out;
+    text-transform: capitalize;
+    font-weight: var(--font-medium);
+}
+
+.nav .menu .list .item .link .icon {
+    font-size: 1.2rem;
+}
+
+
+.nav .menu .close {
+    position: absolute;
+    right: 1.3rem;
+    bottom: .5rem;
+    font-size: 1.5rem;
+    color: var(--first-color);
+    cursor: pointer;
+    font-weight: var(--font-medium);
+}
+
+.nav .menu .close:hover {
+    color: var(--first-color-alt);
+}
+
+.nav .menu.active {
+    bottom: 0;
+}
+
+.nav .buttons {
+	display: flex;
+	align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 767px) {
+    .nav .menu {
+        position: fixed;
+        bottom: -400px;
+        left: 0;
+        width: 100%;
+        background-color: var(--body-color);
+        transition: all .5s ease-in-out;
+        padding: 2rem 1.5rem 4rem;
+        box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 5px 5px 0 0;
+        z-index: var(--z-fixed);
+    }
+}
+
+.active-link * {
+    color: var(--first-color);
+}
+
+.scroll-header {
+	box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.change-theme {
+    cursor: pointer;
+    position: absolute;
+    right: 3.3rem;
+    bottom: .5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: var(--font-medium);
+    z-index: 1;
+    color: var(--text-color);
+}
+
+.change-theme:hover {
+    color: var(--first-color);
+}
+
+@media (min-width: 932px) {
+    .nav .change-theme {
+        position: static;
+    }
+}

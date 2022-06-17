@@ -1,0 +1,51 @@
+.experiene .tab:first-child {
+    --color: #28d9ed;
+}
+
+.experiene .tab:nth-child(2) {
+    --color: #28d9ed;
+}
+
+.experiene .tab:nth-child(3) {
+    --color: #28d9ed;
+}
+
+.experience .tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.experience .tab {
+    width: 600px;
+    background: var(--container-color);
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.15);
+}
+
+.experience .tab::before {
+    position: absolute;
+    content: '';
+    width: 8px;
+    background: var(--color);
+    height: 100%;
+    transition: all .5s ease;
+}
+
+.experience .icon {
+    padding: 20px;
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.experience .tab .data {
+    padding: 20px;
+    padding-left: 10px;
+    color: #111;
+}

@@ -1,0 +1,38 @@
+.portfolio .container {
+    overflow: initial;
+}
+
+.portfolio .content {
+    padding: 0 1.5rem;
+}
+
+.portfolio .img {
+    width: 265px;
+    border-radius: .7rem;
+    justify-self: center;
+}
+
+.portfolio .container .title {
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-5);
+}
+
+.portfolio .container .description {
+    margin-bottom: var(--mb-0-75);
+}
+
+.portfolio .button:hover .icon {
+    transform: translateX(.25rem)
+}
+
+.swiper-pagination-bullets {
+    top: calc(100% + 1rem);
+}
+
+.swiper-pagination-bullets .swiper-pagination-bullet {
+    background: var(--first-color-lighter);
+}
+
+.swiper-pagination-bullets .swiper-pagination-bullet-active {
+    background: var(--first-color);
+}

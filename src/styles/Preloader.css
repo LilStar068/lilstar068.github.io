@@ -1,0 +1,19 @@
+.preloader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.preloader h1 {
+    color: var(--first-color);
+    font-size: 3rem;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+}
+
+.preloader::-webkit-scrollbar {
+    display: none;
+}
